@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Жабы</title>
+		<meta charset="utf-8">
+		<meta name="description" content="ЖАБЫЖАБЫЖАБЫ" />
+		<meta name="Keywords" content="Жабы, Лягушки, Земноводные"> 
+		<meta name="viewport" content="width=device-width">
+		<link rel="stylesheet" type="text/css" href="styles/styles.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<meta name="viewport" content="width=device-width">
+	</head>
+
+	<body>
+		<div class="container">
+
+			<div class="header-back">
+				<img class="responsive-img" src="res/headerpic.png">
+				<div class="title-header">
+					Клуб любителей земноводных "Жабы мои жабы"
+				</div>
+				<div class="navigation-menu">
+					<a href="#NashiJabi" class="nav-element">Наши лучшие жабы</a>
+					<a href="#sched" class="nav-element">Экскурсии к жабам</a>
+					<a href="#ab" class="nav-element">О нас</a>
+					<a href="#them" class="nav-element">Ваши отзывы о жабах</a>
+				</div>
+			</div>	
+		</div>
+		<div class="title-proj" id="NashiJabi">
+			Наши лучшие жабы
+		</div>
+		<div class="sim-slider" id = "slider">
+			<ul class="sim-slider-list">
+			<li><img src="res/Sl1.jpg" alt="screen"></li>
+			<li class="sim-slider-element"><img  src="res/Sl1.jpg" alt="1"></li>
+			<li class="sim-slider-element"><img  src="res/Sl2.jpg" alt="2"></li>
+			<li class="sim-slider-element"><img  src="res/Sl3.jpg" alt="3"></li>
+			<li class="sim-slider-element"><img  src="res/Sl4.jpg" alt="4"></li>
+
+			</ul>
+			<div class="sim-slider-arrow-left"></div>
+			<div class="sim-slider-arrow-right"></div>
+			<div class="sim-slider-dots"></div>
+	  </div>
+	  <div class = "spaceHeader">Жабы наших партнеров</div>
+	  <div>
+		<div class="wrapper">
+		<div class = "gridBlock"><img  src="res/gr1.png"><span class="inGridText">Лишний вес не повод для грусти</span></div>
+		<div class = "gridBlock"><img  src="res/gr2.png"><span class="inGridText">Красные глаза от работы? Мы знаем, как устранить это. Достаточно лишь....</span></div>
+		<div class = "gridBlock"><img  src="res/gr3.png"><span class="inGridText">5 причин, что ты - жаба</span></div>
+		<div class = "gridBlock"><img  src="res/gr4.png"><span class="inGridText">Экзотические предпочтения в.... земноводных</span></div>
+		<div class = "gridBlock"><img  src="res/gr5.png"><span class="inGridText">Охранник супермаркета оказался лягушкой-быком. Читать далее:</span></div>
+		<div class = "gridBlock"><img  src="res/gr6.png"><span class="inGridText">Философские проблемы земноводных</span></div>
+	 	</div>
+	</div>
+	  <div class="schedule" id="sched">
+		<div class="JabaHeader">
+			Расписание
+		</div>
+		<div class="schedule-content">
+			<div class="schedule-text">
+					<div class = "date"> 27/12/2020</div>
+					<div class="text-element">
+					Фантастические жабы и где они обитают (18+)
+				</div>
+				
+				<div class = "date"> 31/12/2020</div>
+				<div class="text-element">
+					Жабмороз-зеленый нос (новогодняя ёлка)
+				</div>
+				<div class = "date"> 32/13/2020</div>
+				<div class="text-element">
+					Жизненный цикл головастиков: от рождения до экзистенциального кризиса
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	<div class="about" id="ab">
+		<div class="spaceHeader">
+			О нас
+		</div>
+		<div class="about-content">
+			<div class="about-text">
+				<div class="about-element">
+					Мы находимся в г. Москва, болотная площадь.
+				</div>
+			</div>
+
+			<div class="about-map">
+				<div class="mapouter">
+					<div class="yamap_canvas">
+						<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Adeef3eaffae4fcf3ccb5964d5c77748cf42d723c8d80449d04cda18b0996e083&amp;source=constructor" width="866" height="598" frameborder="0"></iframe>
+
+					</div>
+					<style>
+						.mapouter{
+							position:relative;
+							text-align:right;
+							height:500px;
+							width:600px;
+						}
+						.yamap_canvas {
+							overflow:hidden;
+							background:none!important;
+							height:500px;
+							margin-top: 100px;
+							width:600px;
+						}
+					</style>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="themes-form" id="them">
+		<div class="JabaHeader">
+			Ваши отзывы о жабах
+		</div>
+		<div class="form-block">
+			<div class="JabaHeader">
+				Тема отзыва
+			</div>
+			<form action="index.php" method="post">
+				<textarea class="theme" name="theme" rows="3" cols="70" >
+
+				</textarea>
+				<div class="JabaHeader">
+					Описание
+				</div>
+				<textarea class="desc" name="desc" rows="14" cols="70" >
+
+				</textarea>
+				<input class="btn" type="submit" name="sub" value="Отправить">
+			</div>
+			</form>
+			
+	</div>
+
+
+
+	  <script type="text/javascript">
+		function Sim(sldrId) {
+
+			let id = document.getElementById(sldrId);
+			if(id) {
+				this.sldrRoot = id
+			}
+			else {
+				this.sldrRoot = document.querySelector('.sim-slider')
+			};
+
+			// Carousel objects
+			this.sldrList = this.sldrRoot.querySelector('.sim-slider-list');
+			this.sldrElements = this.sldrList.querySelectorAll('.sim-slider-element');
+			this.sldrElemFirst = this.sldrList.querySelector('.sim-slider-element');
+			this.leftArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-left');
+			this.rightArrow = this.sldrRoot.querySelector('div.sim-slider-arrow-right');
+			this.indicatorDots = this.sldrRoot.querySelector('div.sim-slider-dots');
+
+			// Initialization
+			this.options = Sim.defaults;
+			Sim.initialize(this)
+		};
+
+		Sim.defaults = {
+
+			// Default options for the carousel
+			loop: true,     // Бесконечное зацикливание слайдера
+			auto: true,     // Автоматическое пролистывание
+			interval: 5000, // Интервал между пролистыванием элементов (мс)
+			arrows: true,   // Пролистывание стрелками
+			dots: true      // Индикаторные точки
+		};
+
+		Sim.prototype.elemPrev = function(num) {
+			num = num || 1;
+
+			let prevElement = this.currentElement;
+			this.currentElement -= num;
+			if(this.currentElement < 0) this.currentElement = this.elemCount-1;
+
+			if(!this.options.loop) {
+				if(this.currentElement == 0) {
+					this.leftArrow.style.display = 'none'
+				};
+				this.rightArrow.style.display = 'block'
+			};
+			
+			this.sldrElements[this.currentElement].style.opacity = '1';
+			this.sldrElements[prevElement].style.opacity = '0';
+
+			if(this.options.dots) {
+				this.dotOn(prevElement); this.dotOff(this.currentElement)
+			}
+		};
+
+		Sim.prototype.elemNext = function(num) {
+			num = num || 1;
+			
+			let prevElement = this.currentElement;
+			this.currentElement += num;
+			if(this.currentElement >= this.elemCount) this.currentElement = 0;
+
+			if(!this.options.loop) {
+				if(this.currentElement == this.elemCount-1) {
+					this.rightArrow.style.display = 'none'
+				};
+				this.leftArrow.style.display = 'block'
+			};
+
+			this.sldrElements[this.currentElement].style.opacity = '1';
+			this.sldrElements[prevElement].style.opacity = '0';
+
+			if(this.options.dots) {
+				this.dotOn(prevElement); this.dotOff(this.currentElement)
+			}
+		};
+
+		Sim.prototype.dotOn = function(num) {
+			this.indicatorDotsAll[num].style.cssText = 'background-color:#C4C4C4; cursor:pointer;'
+		};
+
+		Sim.prototype.dotOff = function(num) {
+			this.indicatorDotsAll[num].style.cssText = 'background-color:#AC7878; cursor:default;'
+		};
+
+		Sim.initialize = function(that) {
+
+			// Constants
+			that.elemCount = that.sldrElements.length; // Количество элементов
+
+			// Variables
+			that.currentElement = 0;
+			let bgTime = getTime();
+
+			// Functions
+			function getTime() {
+				return new Date().getTime();
+			};
+			function setAutoScroll() {
+				that.autoScroll = setInterval(function() {
+					let fnTime = getTime();
+					if(fnTime - bgTime + 10 > that.options.interval) {
+						bgTime = fnTime; that.elemNext()
+					}
+				}, that.options.interval)
+			};
+
+			// Start initialization
+			if(that.elemCount <= 1) {   // Отключить навигацию
+				that.options.auto = false; that.options.arrows = false; that.options.dots = false;
+				that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
+			};
+			if(that.elemCount >= 1) {   // показать первый элемент
+				that.sldrElemFirst.style.opacity = '1';
+			};
+
+			if(!that.options.loop) {
+				that.leftArrow.style.display = 'none';  // отключить левую стрелку
+				that.options.auto = false; // отключить автопркрутку
+			}
+			else if(that.options.auto) {   // инициализация автопрокруки
+				setAutoScroll();
+				// Остановка прокрутки при наведении мыши на элемент
+				that.sldrList.addEventListener('mouseenter', function() {clearInterval(that.autoScroll)}, false);
+				that.sldrList.addEventListener('mouseleave', setAutoScroll, false)
+			};
+
+			if(that.options.arrows) {  // инициализация стрелок
+				that.leftArrow.addEventListener('click', function() {
+					let fnTime = getTime();
+					if(fnTime - bgTime > 1000) {
+						bgTime = fnTime; that.elemPrev()
+					}
+				}, false);
+				that.rightArrow.addEventListener('click', function() {
+					let fnTime = getTime();
+					if(fnTime - bgTime > 1000) {
+						bgTime = fnTime; that.elemNext()
+					}
+				}, false)
+			}
+			else {
+				that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
+			};
+
+			if(that.options.dots) {  // инициализация индикаторных точек
+				let sum = '', diffNum;
+				for(let i=0; i<that.elemCount; i++) {
+					sum += '<span class="sim-dot"></span>'
+				};
+				that.indicatorDots.innerHTML = sum;
+				that.indicatorDotsAll = that.sldrRoot.querySelectorAll('span.sim-dot');
+				// Назначаем точкам обработчик события 'click'
+				for(let n=0; n<that.elemCount; n++) {
+					that.indicatorDotsAll[n].addEventListener('click', function() {
+						diffNum = Math.abs(n - that.currentElement);
+						if(n < that.currentElement) {
+							bgTime = getTime(); that.elemPrev(diffNum)
+						}
+						else if(n > that.currentElement) {
+							bgTime = getTime(); that.elemNext(diffNum)
+						}
+						// Если n == that.currentElement ничего не делаем
+					}, false)
+				};
+				that.dotOff(0);  // точка[0] выключена, остальные включены
+				for(let i=1; i<that.elemCount; i++) {
+					that.dotOn(i)
+				}
+			}
+		};
+
+		new Sim();
+	</script>
+	<script>new Sim("slider");</script>
+
+		
+	</body>
+
+</html>
